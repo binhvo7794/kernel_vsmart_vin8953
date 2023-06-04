@@ -34,6 +34,7 @@ enum cts_device_fw_reg {
 /** Hardware IDs, read from version register */
 enum cts_hwid {
     CTS_HWID_ICNL9911 = 0x9901u,
+    CTS_HWID_ICNL9911S = 0x990110u,
     CTS_HWID_ANY = 0,
     CTS_HWID_INVALID = 0xFFFFu,
 };
@@ -41,6 +42,7 @@ enum cts_hwid {
 /* Firmware IDs, read from firmware @addrress 0x000A~0x000B under normal mode */
 enum cts_fwid {
     CTS_FWID_ICNL9911 = 0x9911u,
+    CTS_FWID_ICNL9911S = 0x9964u,
     CTS_FWID_ANY = 0u,
     CTS_FWID_INVALID = 0xFFFFu
 };

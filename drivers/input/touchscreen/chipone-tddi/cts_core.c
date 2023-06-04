@@ -592,6 +592,13 @@ const static struct cts_sfctrl icn9911_sfctrl = {
     .ops = &cts_sfctrlv2_ops
 };
 
+const static struct cts_sfctrl icn9911s_sfctrl = {
+	.reg_base = 0x34000,
+	.xchg_sram_base = (64 - 1) * 1024,
+	.xchg_sram_size = 1024,	/* For non firmware programming */
+	.ops = &cts_sfctrlv2_ops
+};
+
 const static struct cts_device_hwdata cts_device_hwdatas[] = {
     {
         .name = "ICNL9911",
@@ -604,6 +611,18 @@ const static struct cts_device_hwdata cts_device_hwdatas[] = {
         .program_addr_width = 3,
 
         .sfctrl = &icn9911_sfctrl,
+    },
+    {
+        .name = "ICNL9911S",
+        .hwid = CTS_HWID_ICNL9911S,
+        .fwid = CTS_FWID_ICNL9911S,
+        .num_row = 32,
+        .num_col = 18,
+        .sram_size = 64 * 1024,
+
+        .program_addr_width = 3,
+
+        .sfctrl = &icn9911s_sfctrl,
     }
 };
 
