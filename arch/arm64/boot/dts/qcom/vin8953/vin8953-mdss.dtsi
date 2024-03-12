@@ -1,0 +1,9 @@
+&mdss_dsi0_pll {
+	qcom,ssc-frequency-hz = <30000>;
+	qcom,ssc-ppm = <5000>;
+};
+
+&mdss_dsi1_pll {
+	qcom,ssc-frequency-hz = <30000>;
+	qcom,ssc-ppm = <5000>;
+};

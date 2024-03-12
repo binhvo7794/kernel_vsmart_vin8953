@@ -1,0 +1,14 @@
+&soc {
+	qcom,board_id {
+		compatible = "qcom,board_id";
+		board_id0_read = <&tlmm 90 0>;
+		board_id1_read = <&tlmm 91 0>;
+		board_id2_read = <&tlmm 92 0>;
+		board_id3_read = <&tlmm 93 0>;
+		status = "ok";
+	};
+};
+
+#include "casuarina-audio.dtsi"
+#include "casuarina-battery.dtsi"
+#include "casuarina-camera_pie.dtsi"

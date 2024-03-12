@@ -1,0 +1,11 @@
+&other_ext_mem {
+	reg = <0x0 0x84A00000 0x0 0x1e00000>;
+};
+
+&qcom_seecom {
+	reg = <0x84A00000 0x1900000>;
+};
+
+&adsp_shmem_device_mem {
+	/delete-property/ label;
+};

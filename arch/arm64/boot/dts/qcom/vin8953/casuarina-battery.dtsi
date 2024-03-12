@@ -1,0 +1,9 @@
+/ {
+	/delete-node/ qcom,battery-data;
+
+	mtp_batterydata: qcom,battery-data {
+		qcom,batt-id-range-pct = <15>;
+        #include "qg-batterydata-V430-4950mah-300k.dtsi"
+        #include "qg-batterydata-V430-5000mah-300k.dtsi"
+	};
+};

@@ -1,0 +1,5 @@
+#include "vin8953-general.dtsi"
+#include "vin8953-mdss.dtsi"
+#include "vin8953-pinctrl.dtsi"
+#include "vin8953-regulator.dtsi"
+#include "vin8953-soc.dtsi"

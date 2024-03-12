@@ -1,0 +1,13 @@
+/ {
+	reserved-memory {
+		pstore: ramoops@91400000 {
+			compatible = "ramoops";
+			reg = <0 0x91400000 0 0x100000>;
+			ecc-size = <0x10>;
+			console-size = <0x80000>;
+			record-size = <0x40000>;
+			ftrace-size = <0x20000>;
+			pmsg-size = <0x20000>;
+		};
+	};
+};
